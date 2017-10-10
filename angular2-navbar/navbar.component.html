@@ -1,0 +1,7 @@
+<template let-items="items">
+  <div class="ui menu">
+    <a *ngFor="let item of items" class="item" [routerLinkActive]="['active']" [routerLink]="item.route">
+      {{ item.label }}
+    </a>
+  </div>
+</template>
